@@ -3,4 +3,10 @@
     <string name="title_activity_home_theater">HomeTheaterActivity</string>
     <string name="title_activity_tvremote">TVRemoteActivity</string>
     <string name="title_activity_splash">SplashActivity</string>
+    <string name="set_top_box">Set-top box</string>
+    <string name="home_theater">Home Theater</string>
+    <string name="ac">AC</string>
+    <string name="tv">TV</string>
+    <string name="ir_remote">IR remote</string>
+    <string name="v21_remote">V21 Remote</string>
 </resources>
