@@ -1,0 +1,119 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <!-- LEFT COLUMN -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button android:id="@+id/btnPower" android:text="Standby" style="@style/btnStyleTop"/>
+            <Button android:id="@+id/btn5M" android:text="5.1" style="@style/btnStyle"/>
+            <Button android:id="@+id/btn2M" android:text="2.1" style="@style/btnStyle"/>
+            <Button android:id="@+id/btnUSB" android:text="USB/SD" style="@style/btnStyle"/>
+            <Button android:id="@+id/btnRearMinus" android:text="Rear -" style="@style/btnStyle"/>
+            <Button android:id="@+id/btnBassMinus" android:text="Bass -" android:layout_gravity="right" style="@style/btnStyleC"/>
+            <Button android:id="@+id/btnFrontMinus" android:text="Front -" style="@style/btnStyle"/>
+            <Button android:id="@+id/btnRepeat" android:text="Repeat" style="@style/btnStyle"/>
+            <Button android:id="@+id/btnPrev" android:text="⏮" android:textSize="24sp" style="@style/btnStyle"/>
+            <Button android:id="@+id/btnCenMinus" android:text="CEN -" style="@style/btnStyle"/>
+
+        </LinearLayout>
+
+        <!-- CENTER COLUMN -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="90dp">
+
+                <!-- Glow (background) -->
+                <View
+                    android:id="@+id/ledGlow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/led_glow"
+                    android:alpha="0"/>
+
+                <!-- LED (foreground) -->
+                <View
+                    android:id="@+id/led"
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/led_off"/>
+
+            </FrameLayout>
+            <!-- Top empty -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".798"/>
+
+            <!-- VOL + -->
+            <Button android:id="@+id/btnVolPlus"
+                android:text="VOL +"
+                style="@style/btnStyleC"/>
+
+            <!-- Middle spacing -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".3"/>
+
+            <!-- VOL - -->
+            <Button android:id="@+id/btnVolMinus"
+                android:text="VOL -"
+                style="@style/btnStyleC"/>
+
+
+
+            <Button android:id="@+id/btn3D"
+                android:text="3D/EQ"
+                style="@style/btnStyle"/>
+
+            <Button android:id="@+id/btnPlay"
+                android:text="▶" android:textSize="24sp"
+                style="@style/btnStyle"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".3"/>
+
+        </LinearLayout>
+
+        <!-- RIGHT COLUMN -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button android:id="@+id/btnMute" android:text="Mute" android:layout_gravity="end"
+                style="@style/btnStyleTop"/>
+            <Button android:id="@+id/btnFM" android:text="FM" style="@style/btnStyleR"/>
+            <Button android:id="@+id/btnTunePlus" android:text="Tune +" style="@style/btnStyleR"/>
+            <Button android:id="@+id/btnTuneMinus" android:text="Tune -" style="@style/btnStyleR"/>
+            <Button android:id="@+id/btnRearPlus" android:text="Rear +" style="@style/btnStyleR"/>
+            <Button android:id="@+id/btnBassPlus" android:text="Bass +" style="@style/btnStyleC"/>
+            <Button android:id="@+id/btnFrontPuls" android:text="Front +" style="@style/btnStyleR"/>
+            <Button android:id="@+id/btnPause" android:text="■" android:textSize="24sp" style="@style/btnStyleR"/>
+            <Button android:id="@+id/btnNext" android:text="⏭" android:textSize="24sp" style="@style/btnStyleR"/>
+            <Button android:id="@+id/btnCenPlus" android:text="CEN +" style="@style/btnStyleR"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
